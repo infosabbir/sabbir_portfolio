@@ -11,6 +11,13 @@ class LandingPageWeb extends StatefulWidget {
 class _LandingPageWebState extends State<LandingPageWeb> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(elevation: 0,title: TabsWeb(),),);
+    return Scaffold(
+      drawer: Drawer(),
+      appBar: AppBar(elevation: 0, title: Row(
+        children: [
+          TabsWeb(title: 'Home'),
+        ],
+      )),
+    );
   }
 }

@@ -8,7 +8,7 @@ import 'package:sabbir_portfolio/app.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: !kReleaseMode && Platform.isWindows,
+      enabled: !kReleaseMode && !kIsWeb && Platform.isWindows,
       builder: (context) {
         return const MyApp();
       },
