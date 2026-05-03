@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:sabbir_portfolio/res/constants.dart';
 import 'package:sabbir_portfolio/view/home/home.dart';
+import 'package:sabbir_portfolio/view/intro/components/animated_text_component.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -25,12 +26,19 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(backgroundColor: bgColor,body: Center(child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        
-
-      ],),),);
+    return const Scaffold(
+      backgroundColor: bgColor,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            AnimatedImageContainer(width: 100, height: 100),
+            SizedBox(height: defaultPadding),
+            
+          ],
+        ),
+      ),
+    );
   }
 }
