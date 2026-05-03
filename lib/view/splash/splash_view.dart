@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sabbir_portfolio/res/constants.dart';
 import 'package:sabbir_portfolio/view/home/home.dart';
 import 'package:sabbir_portfolio/view/intro/components/animated_text_component.dart';
+import 'package:sabbir_portfolio/view/splash/components/animated_loading_text.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -35,7 +36,7 @@ class _SplashViewState extends State<SplashView> {
           children: [
             AnimatedImageContainer(width: 100, height: 100),
             SizedBox(height: defaultPadding),
-            
+            AnimatedLoadingText(),
           ],
         ),
       ),
