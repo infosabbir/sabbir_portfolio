@@ -17,9 +17,10 @@ class CustomDrawer extends StatelessWidget {
               color: bgColor,
               child: const Padding(
                 padding: EdgeInsets.all(defaultPadding / 2),
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [
-                  
-                ],),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [],
+                ),
               ),
             ),
           ],
