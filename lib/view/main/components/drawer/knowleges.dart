@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sabbir_portfolio/view/main/components/drawer/knowlege_text.dart';
 
 class Knowleges extends StatelessWidget {
   const Knowleges({super.key});
@@ -16,6 +17,9 @@ class Knowleges extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
+        KnowlegeText(knowledge: 'Flutter, Dart'),
+        KnowlegeText(knowledge: 'Networking, Firebase, API'),
+        KnowlegeText(knowledge: 'Git, Github'),
       ],
     );
   }
