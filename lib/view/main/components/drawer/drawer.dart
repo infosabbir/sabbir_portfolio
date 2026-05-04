@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sabbir_portfolio/res/constants.dart';
 import 'package:sabbir_portfolio/view/main/components/drawer/about.dart';
+import 'package:sabbir_portfolio/view/main/components/drawer/contact_icon.dart';
 import 'package:sabbir_portfolio/view/main/components/drawer/knowleges.dart';
 import 'package:sabbir_portfolio/view/main/components/drawer/my_skills.dart';
 import 'package:sabbir_portfolio/view/main/components/drawer/personal_info.dart';
@@ -28,6 +29,7 @@ class CustomDrawer extends StatelessWidget {
                     Knowleges(),
                     Divider(),
                     SizedBox(height: defaultPadding),
+                    ContactIcon()
                   ],
                 ),
               ),
